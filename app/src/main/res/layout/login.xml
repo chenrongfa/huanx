@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+               android:background="@color/gray"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_centerInParent="true"
+            android:background="@drawable/em_welcom_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_user"
+         android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_user"
+                android:background="#ffffff"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/user"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/em_icon_account"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_pwd"
+            android:layout_below="@+id/rl_user"
+         android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPassword"
+                android:background="#ffffff"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:imeOptions="actionSend"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/em_icon_pwd"
+                android:layout_height="40dp"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@+id/rl_pwd"
+            android:layout_width="match_parent"
+           android:layout_margin="30dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_register"
+                android:text="@string/register"
+                android:textColor="@drawable/selector_blacktow"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bluetow"
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_marginRight="10dp"
+                android:id="@+id/btn_login"
+                android:textColor="@drawable/selector_blacktow"
+                android:text="@string/login1"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bluetow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

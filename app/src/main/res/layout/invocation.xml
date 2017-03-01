@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hyphenate="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:id="@+id/etb_invocation"
+        hyphenate:titleBarLeftImage="@drawable/ease_mm_title_back"
+        hyphenate:titleBarTitle="@string/add_friend"
+        android:layout_width="match_parent"
+        hyphenate:titleBarRightImage="@drawable/ease_mm_title_remove"
+        android:layout_height="wrap_content"></com.hyphenate.easeui.widget.EaseTitleBar>
+   <ListView
+       android:id="@+id/lv_invocation"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"></ListView>
+</LinearLayout>

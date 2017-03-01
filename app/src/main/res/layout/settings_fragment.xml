@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hephenate="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+   <com.hyphenate.easeui.widget.EaseTitleBar
+       android:layout_width="match_parent"
+       hephenate:titleBarTitle="@string/setting"
+       android:layout_height="wrap_content">
+   </com.hyphenate.easeui.widget.EaseTitleBar>
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_loginout"
+        android:text="@string/out"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/em_default_avatar"
+        android:textSize="@dimen/font_size"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gray1"
+        android:layout_height="@dimen/linear"></View>
+
+</LinearLayout>

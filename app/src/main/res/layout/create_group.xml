@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+        android:layout_margin="8dp"
+        android:maxLines="1"
+        android:id="@+id/et_groupName"
+        android:layout_width="match_parent"
+        android:hint="@string/group_name"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_margin="8dp"
+        android:maxLines="3"
+        android:id="@+id/et_groupDesc"
+        android:layout_width="match_parent"
+        android:hint="@string/group_desc"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:maxLines="3"
+        android:id="@+id/et_reason"
+        android:layout_width="match_parent"
+        android:hint="@string/group_reason"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_margin="8dp"
+        android:maxLines="3"
+        android:id="@+id/et_member"
+        android:layout_width="match_parent"
+        android:hint="@string/group_num"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/sn_type"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+        <Button
+            android:id="@+id/btn_member"
+            android:text="@string/member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_create"
+            android:text="@string/create"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_nevigate"
+            android:text="@string/nevigate"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

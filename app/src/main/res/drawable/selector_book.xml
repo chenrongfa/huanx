@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:state_checked="true" android:drawable="@drawable/ease_default_avatar"></item>
+   <item android:state_checked="false" android:drawable="@drawable/ease_contact_list_normal"></item>
+</selector>
